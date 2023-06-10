@@ -6,8 +6,6 @@ import { ElementRef, Directive, HostListener} from '@angular/core';
   templateUrl: './directive-event-change.component.html',
   styleUrls: ['./directive-event-change.component.scss']
 })
-
-
 export class DirectiveEventChangeComponent {
 
   public el : any
@@ -18,7 +16,6 @@ export class DirectiveEventChangeComponent {
     @HostListener('keypress', ['$event']) onKeyPress(event: KeyboardEvent) {
     this.changeColor(event.key);
     }
-    
     changeColor(key: string) {
     let color: string;
     switch (key) {
